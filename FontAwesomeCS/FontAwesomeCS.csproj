@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Flyingpie</Authors>
+        <Company>Flyingpie</Company>
+        <Description>C# typed mapping for FontAwesome 5.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <OutputPath>bin</OutputPath>
+        <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    </PropertyGroup>
+
+</Project>
