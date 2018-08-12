@@ -42,6 +42,6 @@ var label = FAIcon.GithubAltBrands.Label();
 // "\uf113"
 var unicode = FAIcon.GithubAltBrands.Unicode();
 
-// "Brands"
+// "brands"
 var style = FAIcon.GithubAltBrands.Style();
 ```
