@@ -34,11 +34,14 @@ Using a couple of built-in extensions, you can use these to get to the metadata:
 
 ```cs
 // "github-alt"
-var label = FAIcon.GithubAltBrands.GetFAIconAttribute().Label;
+var key = FAIcon.GithubAltBrands.Key();
+
+// "Alternate GitHub"
+var label = FAIcon.GithubAltBrands.Label();
 
 // "\uf113"
-var unicode = FAIcon.GithubAltBrands.GetFAIconAttribute().Unicode;
+var unicode = FAIcon.GithubAltBrands.Unicode();
 
 // "Brands"
-var style = FAIcon.GithubAltBrands.GetFAIconAttribute().Style;
+var style = FAIcon.GithubAltBrands.Style();
 ```
