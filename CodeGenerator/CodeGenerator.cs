@@ -41,7 +41,8 @@ namespace FontAwesomeCS.CodeGenerator
             {
                 foreach (var style in icon.Value.Styles)
                 {
-                    cs.AppendLine($"        [FAIcon(\"{icon.Key}\", FAStyle.{FormatName(style)}, \"\\u{icon.Value.Unicode}\")] {FormatName(icon.Key)}{FormatName(style)},");
+                    cs.AppendLine($"        /// <summary>{icon.Value.Label} - {icon.Key} - {icon.Value.Unicode}</summary>");
+                    cs.AppendLine($"        [FAIcon(\"{icon.Key}\", \"{icon.Value.Label}\", FAStyle.{FormatName(style)}, \"\\u{icon.Value.Unicode}\")] {FormatName(icon.Key)}{FormatName(style)},");
                 }
             }
 
