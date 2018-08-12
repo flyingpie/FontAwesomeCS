@@ -23,12 +23,12 @@
         /// <summary>
         /// Returns the style enum of the icon, eg <see cref="FAStyle.Brands" />
         /// </summary>
-        public static FAStyle Style(this FAIcon icon) => icon.GetAttributeOfType<FAIconAttribute>().Style;
+        public static FAStyle FAStyle(this FAIcon icon) => icon.GetAttributeOfType<FAIconAttribute>().Style;
 
         /// <summary>
         /// Returns the style of the icon as a string, eg "brands"
         /// </summary>
-        public static string StyleString(this FAIcon icon) => icon.GetAttributeOfType<FAIconAttribute>().Style.Style();
+        public static string Style(this FAIcon icon) => icon.FAStyle().Style();
 
         /// <summary>
         /// Returns the name of the style, eg "brands"
